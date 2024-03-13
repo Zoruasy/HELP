@@ -1,0 +1,83 @@
+@import url(https://db.onlinewebfonts.com/c/97c4b25dc74e0ab045154e75a8fdd69d?family=Game+of+Thrones);
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(34, 40, 49);
+}
+
+img {
+    object-fit: cover;
+}
+
+h1 {
+    font-family: "Game of Thrones";
+    margin: 30px;
+    padding: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Flex container for character cards */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+}
+
+/* Character card styles */
+.character-card {
+    margin: 20px;
+    width: 300px; /* Reduced width for better spacing */
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    border-radius: 10px;
+    overflow: hidden; /* Prevent image overflow */
+    cursor: pointer;
+    font-family: "Game of Thrones";
+}
+
+.character-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+    transform: scale(1.05); /* Slightly reduce scaling */
+}
+
+.character-card h2 {
+    font-size: 15px; /* Slightly larger font size */
+    margin: 20px 0; /* Increase margin */
+}
+
+.character-card img {
+    width: 100%;
+    height: 200px; /* Set fixed height for better consistency */
+    object-fit: cover;
+}
+
+/* Modal styles */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 1000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 80%; /* Optioneel: beperk de breedte van de modale pop-up */
+    display: none; /* Initially hide modal */
+}
+
+.modal-content {
+    /* Styles for modal content */
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
